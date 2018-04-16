@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainAccent"
+    tools:context="com.hunegroup.hune.ui.ImageFullScreenActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        android:background="@color/color_main"
+       >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="false">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="@dimen/size_icon_toolbar"
+                android:layout_height="@dimen/size_icon_toolbar"
+                android:layout_centerVertical="true"
+                android:padding="12.5dp"
+                android:src="@mipmap/ic_back_white" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <ImageView
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/imgFullScreen"
+        android:scaleType="fitCenter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</RelativeLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ln_locthongtin_tv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:background="@color/color_main_timviec">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="@dimen/size_icon_toolbar"
+                    android:layout_height="@dimen/size_icon_toolbar"
+                    android:padding="12.5dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_back_white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/locthongtin_tv_title"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="@dimen/size_text_toolbar" />
+
+                <ImageView
+                    android:id="@+id/imgNotify"
+                    android:layout_width="@dimen/size_icon_toolbar"
+                    android:layout_height="@dimen/size_icon_toolbar"
+                    android:padding="12.5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_notification_white" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/txtTheoLoaiHinh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/locthongtin_tv_theoloaihinh"
+                android:textSize="@dimen/text_size_13sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_loaiCongViec"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/txtTheoLoaiHinh"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/imgLeft"
+                    android:layout_width="@dimen/size_icon_normal"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_arrow_left_color_main" />
+
+                <ImageView
+                    android:id="@+id/imgRight"
+                    android:layout_width="@dimen/size_icon_normal"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_arrow_right_color_main" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_toLeftOf="@id/imgRight"
+                    android:layout_toRightOf="@id/imgLeft">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/size_icon_normal"
+                                android:layout_height="@dimen/size_icon_normal"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/ic_clear" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Làm đẹp"
+                                android:textColor="@color/color_main"
+                                android:textSize="@dimen/text_size_13sp" />
+
+                            <CheckBox
+                                android:id="@+id/ckbItem"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:checked="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/listThongTin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rl_loaiCongViec"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorViewSpace" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/locthongtin_tv_theogioitinh"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <CheckBox
+                        android:id="@+id/ckbNam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/locthongtin_tv_nam"
+                        android:textColor="@color/color_main_timviec"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <CheckBox
+                        android:id="@+id/ckbNu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/locthongtin_tv_nu"
+                        android:textColor="@color/color_main_timviec"
+                        android:textSize="@dimen/text_size_13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/locthongtin_tv_mucluong"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/custom_button_dialog_thongbao_timviec">
+
+                        <Spinner
+                            android:id="@+id/spnMucLuong"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></Spinner>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnChapNhan"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_button_danhgia_timviec"
+                    android:text="@string/locthongtin_tv_chapnhan"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20dp">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btnAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_add"
+                    app:backgroundTint="@color/color_main_timviec" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

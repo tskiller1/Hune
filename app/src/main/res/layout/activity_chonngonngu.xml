@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chonchucnang"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ChonChucNangActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/color_main"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgBack"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:padding="12.5dp"
+                        android:src="@mipmap/ic_back_white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/chonngonngu"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorTextWhite"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chonngonngu_ngonnguhientai"
+                    android:textColor="@color/colorText"
+                    android:textSize="18sp" />
+                <View
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorViewSpace"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+                <RadioGroup
+                    android:id="@+id/rdg_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp">
+                    <RadioButton
+                        android:id="@+id/rdb_vietnamese"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chonngonngu_vietnamese"
+                        app:buttonTint="@color/color_main" />
+                    <View
+                        android:background="@color/colorViewSpace"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"/>
+                    <RadioButton
+                        android:id="@+id/rdb_english"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/color_main"
+                        android:text="@string/chonngonngu_english"
+                        app:buttonTint="@color/color_main" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btnHoanTat"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom_button_danhgia_tuyendung"
+            android:text="@string/dangtuyen_td_hoantat"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="20sp" />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

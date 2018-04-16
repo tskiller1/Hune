@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".uiv2.HunePayTuyenDungActivity">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/color_main_timviec"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imv_back"
+                android:layout_width="@dimen/size_icon_toolbar"
+                android:layout_height="@dimen/size_icon_toolbar"
+                android:layout_centerVertical="true"
+                android:padding="12.5dp"
+                android:src="@mipmap/ic_back_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/hunepay"
+                android:textAllCaps="true"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="@dimen/size_text_toolbar" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/imv_notification"
+                android:layout_width="@dimen/size_icon_toolbar"
+                android:layout_height="@dimen/size_icon_toolbar"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="12.5dp"
+                android:src="@mipmap/ic_notification_white" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:id="@+id/lnl_balance"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/size_icon_normal"
+                android:layout_height="@dimen/size_icon_normal"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_hune_pay" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/my_cash"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text_size_15sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <TextView
+                    android:id="@+id/tv_salary_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@+id/imv_right"
+                    android:layout_toRightOf="@+id/tv_balance"
+                    android:text="@string/vnd"
+                    android:textColor="@color/colorRed"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/imv_right"
+                    android:layout_width="@dimen/size_icon_small"
+                    android:layout_height="@dimen/size_icon_small"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_arrow_down" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorViewSpace" />
+
+        <LinearLayout
+            android:id="@+id/lnl_action_cash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:id="@+id/lnl_recharge"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/size_icon_normal"
+                    android:layout_height="@dimen/size_icon_normal"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ic_increase_gray" />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/deposit_cash"
+                    android:textSize="@dimen/text_size_15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorViewSpace" />
+
+            <LinearLayout
+                android:id="@+id/lnl_withdraw"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/size_icon_normal"
+                    android:layout_height="@dimen/size_icon_normal"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ic_decrease_gray" />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/withdraw"
+                    android:textSize="@dimen/text_size_15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorViewSpace" />
+
+            <LinearLayout
+                android:id="@+id/lnl_history"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/size_icon_normal"
+                    android:layout_height="@dimen/size_icon_normal"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ic_history_gray" />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/history_cash"
+                    android:textSize="@dimen/text_size_15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorViewSpace" />
+
+        <LinearLayout
+            android:id="@+id/lnl_hune_coin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/size_icon_normal"
+                android:layout_height="@dimen/size_icon_normal"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_hune_coin" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/hune_coin"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text_size_15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorViewSpace" />
+    </LinearLayout>
+</LinearLayout>

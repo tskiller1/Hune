@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ProfileTuyenDungActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/color_main"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="@dimen/size_icon_toolbar"
+                    android:layout_height="@dimen/size_icon_toolbar"
+                    android:layout_centerVertical="true"
+                    android:padding="12.5dp"
+                    android:src="@mipmap/ic_back_white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/profile_td_title"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="@dimen/size_text_toolbar" />
+
+                <ImageView
+                    android:id="@+id/imgNotify"
+                    android:layout_width="@dimen/size_icon_toolbar"
+                    android:layout_height="@dimen/size_icon_toolbar"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="12.5dp"
+                    android:src="@mipmap/ic_notification_white" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/lnl_setting">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_thongtin"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtTenNguoiDung"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorText"
+                                android:textSize="@dimen/text_size_18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/profile_td_trangcanhan"
+                                android:textColor="@color/colorText"
+                                android:textSize="@dimen/text_size_15sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imgFocus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_right" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorViewSpace" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ln_quanlytuyennguoi"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/size_icon_normal"
+                                    android:layout_height="@dimen/size_icon_normal"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@mipmap/ic_manager" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="@string/manage_recruiment"
+                                    android:textColor="@color/colorText"
+                                    android:textSize="@dimen/text_size_15sp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/colorViewSpace" />
+
+                            <LinearLayout
+                                android:id="@+id/ln_danhsachyeuthich"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/size_icon_normal"
+                                    android:layout_height="@dimen/size_icon_normal"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@mipmap/ic_heart_fill_gray" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="@string/profile_td_danhsachyeuthich"
+                                    android:textColor="@color/colorText"
+                                    android:textSize="@dimen/text_size_15sp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/colorViewSpace" />
+
+                            <LinearLayout
+                                android:id="@+id/ln_luuthongtin"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/size_icon_normal"
+                                    android:layout_height="@dimen/size_icon_normal"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@mipmap/ic_save" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="@string/profile_td_luuthongtin"
+                                    android:textColor="@color/colorText"
+                                    android:textSize="@dimen/text_size_15sp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/colorViewSpace"
+                                android:visibility="visible" />
+
+                            <LinearLayout
+                                android:id="@+id/ln_hune_pay"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@mipmap/ic_hune_pay" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="@string/hunepay"
+                                    android:textColor="@color/colorText"
+                                    android:textSize="@dimen/text_size_15sp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/colorViewSpace"
+                                android:visibility="visible" />
+
+                            <LinearLayout
+                                android:id="@+id/ln_hune_ads"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@mipmap/ic_hune_ads" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="@string/hune_ads"
+                                    android:textColor="@color/colorText"
+                                    android:textSize="@dimen/text_size_15sp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/colorViewSpace" />
+
+                            <LinearLayout
+                                android:id="@+id/ln_hune_store"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@mipmap/ic_hune_store" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="@string/hune_store"
+                                    android:textColor="@color/colorText"
+                                    android:textSize="@dimen/text_size_15sp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/colorViewSpace" />
+
+                            <LinearLayout
+                                android:id="@+id/ln_discount"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@mipmap/ic_hune_discount" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="@string/discount_information"
+                                    android:textColor="@color/colorText"
+                                    android:textSize="@dimen/text_size_15sp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/colorViewSpace" />
+
+                            <LinearLayout
+                                android:id="@+id/ln_chonlaichucnang"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/size_icon_normal"
+                                    android:layout_height="@dimen/size_icon_normal"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@mipmap/ic_return" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="@string/profile_td_chonlaichucnang"
+                                    android:textColor="@color/colorText"
+                                    android:textSize="@dimen/text_size_15sp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/colorViewSpace" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/lnl_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/size_icon_small"
+                    android:layout_height="@dimen/size_icon_small"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ic_setting" />
+
+                <TextView
+                    android:id="@+id/txtCaiDat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/profile_td_caidat"
+                    android:textSize="@dimen/text_size_15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/size_icon_small"
+                    android:layout_height="@dimen/size_icon_small"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ic_messenger" />
+
+                <TextView
+                    android:id="@+id/txtMessenger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/profile_td_lienhe"
+                    android:textSize="@dimen/text_size_15sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="@dimen/margin_normal">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_add"
+            app:backgroundTint="@color/color_main" />
+    </FrameLayout>
+</RelativeLayout>

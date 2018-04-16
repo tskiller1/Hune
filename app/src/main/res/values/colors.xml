@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- todo : 3/7/17 custom color -->
+    <color name="colorMainAccent">#e8eaf6</color>
+    <color name="color_main">#33ccff</color>
+    <color name="color_main_timviec">#cc3333</color>
+    <color name="colorMainBg">#FAFAFA</color>
+
+    <color name="colorText">#666666</color>
+    <color name="colorTextWhite">#ffffff</color>
+    <color name="colorEditext">#ffffff</color>
+    <color name="colorButton">#0099cc</color>
+
+    <color name="colorViewSpace">#cccccc</color>
+    <color name="colorRed">#ff3333</color>
+
+    <color name="colorStar">#ffe700</color>
+    <color name="translution">#25000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="green">#00c853</color>
+    <color name="color_green">#39b54a</color>
+    <!-- todo : end 3/7/17 custom color -->
+</resources>

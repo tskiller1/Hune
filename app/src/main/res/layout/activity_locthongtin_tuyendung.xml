@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ln_locthongtin_td"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/color_main"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="@dimen/size_icon_toolbar"
+                    android:layout_height="@dimen/size_icon_toolbar"
+                    android:layout_centerVertical="true"
+                    android:padding="12.5dp"
+                    android:src="@mipmap/ic_back_white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/locthongtin_td_title"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="@dimen/size_text_toolbar" />
+
+                <ImageView
+                    android:id="@+id/imgNotify"
+                    android:layout_width="@dimen/size_icon_toolbar"
+                    android:layout_height="@dimen/size_icon_toolbar"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="12.5dp"
+                    android:src="@mipmap/ic_notification_white" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/locthongtin_td_theoloaihinh"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_size_13sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imgLeft"
+                android:layout_width="@dimen/size_icon_normal"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_arrow_left_color_main" />
+
+            <ImageView
+                android:id="@+id/imgRight"
+                android:layout_width="@dimen/size_icon_normal"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_arrow_right_color_main" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizoncalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_toLeftOf="@id/imgRight"
+                android:layout_toRightOf="@id/imgLeft">
+
+                <LinearLayout
+                    android:id="@+id/ll_list_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:background="@color/colorViewSpace" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imgLeftChild"
+                android:layout_width="@dimen/size_icon_normal"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_arrow_left_color_main" />
+
+            <ImageView
+                android:id="@+id/imgRightChild"
+                android:layout_width="@dimen/size_icon_normal"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_arrow_right_color_main" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizoncalScrollChild"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_toLeftOf="@id/imgRightChild"
+                android:layout_toRightOf="@id/imgLeftChild">
+
+                <LinearLayout
+                    android:id="@+id/ll_list_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/colorViewSpace" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="@string/locthongtin_td_theogioitinh"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_size_13sp" />
+
+            <CheckBox
+                android:id="@+id/ckbNam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/color_main"
+                android:checked="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="@string/locthongtin_td_nam"
+                android:textColor="@color/color_main"
+                android:textSize="@dimen/text_size_13sp" />
+
+            <CheckBox
+                android:id="@+id/ckbNu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/locthongtin_td_nu"
+                android:textColor="@color/color_main"
+                android:textSize="@dimen/text_size_13sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnChapNhan"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_button_danhgia_tuyendung"
+            android:text="@string/locthongtin_td_chapnhan"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_add"
+            app:backgroundTint="@color/color_main" />
+    </FrameLayout>
+</RelativeLayout>

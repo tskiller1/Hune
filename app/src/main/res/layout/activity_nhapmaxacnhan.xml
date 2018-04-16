@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_nhapmaxacnhan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txtSlogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLogo"
+        android:layout_centerHorizontal="true"
+        android:text="@string/slogan"
+        android:textStyle="italic"
+        android:textColor="@color/colorTextWhite" />
+
+    <TextView
+        android:id="@+id/txtPhoneNumber"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSlogan"
+        android:text="Nhập mã xác nhận \nđược gửi đến số 090xxxxxx"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:id="@+id/layoutLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPhoneNumber"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtCode"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:background="@drawable/custom_edittext_login"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/btnAccept"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_button_login"
+            android:text="Đồng ý"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtReSend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Gửi lại mã"
+            android:textColor="@color/colorTextWhite"
+            android:textStyle="italic" />
+    </LinearLayout>
+</RelativeLayout>

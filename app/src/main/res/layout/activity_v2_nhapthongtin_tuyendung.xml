@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/color_main"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imv_back"
+                android:layout_width="@dimen/size_icon_toolbar"
+                android:layout_height="@dimen/size_icon_toolbar"
+                android:layout_centerVertical="true"
+                android:padding="12.5dp"
+                android:src="@mipmap/ic_back_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/enter_information"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="@dimen/size_text_toolbar" />
+
+            <ImageView
+                android:id="@+id/imv_notification"
+                android:layout_width="@dimen/size_icon_toolbar"
+                android:layout_height="@dimen/size_icon_toolbar"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="12.5dp"
+                android:src="@mipmap/ic_notification_white"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_size_13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <TextView
+                    android:id="@+id/tv_name_loaihinh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_size_13sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/salary"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <EditText
+                    android:id="@+id/ed_salary"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/custom_edittext_danhgia_tuyendung"
+                    android:hint="@string/enter_salary"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColorHint="@color/colorText"
+                    android:textSize="@dimen/text_size_13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/start"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/custom_edittext_danhgia_tuyendung">
+
+                    <TextView
+                        android:id="@+id/tv_time_start"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/ic_number_down"
+                        android:gravity="center"
+                        android:hint="@string/time"
+                        android:padding="10dp"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorText"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_date_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/custom_edittext_danhgia_tuyendung">
+
+                    <TextView
+                        android:id="@+id/tv_date_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/imv_date_start"
+                        android:hint="@string/started_date"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorText"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <ImageView
+                        android:id="@+id/imv_date_start"
+                        android:layout_width="@dimen/size_icon_normal"
+                        android:layout_height="@dimen/size_icon_normal"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/ic_calendar" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/end"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/custom_edittext_danhgia_tuyendung">
+
+                    <TextView
+                        android:id="@+id/tv_time_end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/ic_number_down"
+                        android:gravity="center"
+                        android:hint="@string/time"
+                        android:padding="10dp"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorText"
+                        android:textSize="@dimen/text_size_13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_date_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/custom_edittext_danhgia_tuyendung">
+
+                    <TextView
+                        android:id="@+id/tv_date_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/imv_date_end"
+                        android:hint="@string/end_date"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorText"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <ImageView
+                        android:id="@+id/imv_date_end"
+                        android:layout_width="@dimen/size_icon_normal"
+                        android:layout_height="@dimen/size_icon_normal"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/ic_calendar" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/themvieclam_tv_mota"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <EditText
+                    android:id="@+id/ed_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/custom_edittext_mota_dangtuyen_tuyendung"
+                    android:gravity="left"
+                    android:hint="@string/enter_description"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:textColorHint="@color/colorText"
+                    android:textSize="@dimen/text_size_13sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_button_danhgia_tuyendung"
+                android:text="@string/complete"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/cancel"
+                android:textColor="@color/colorRed"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

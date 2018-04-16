@@ -1,0 +1,70 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- todo :3/7/17 custom stype -->
+    <style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_main</item>
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/color_main</item>
+        <item name="colorAccent">@color/colorMainAccent</item>
+        <item name="android:windowBackground">@color/colorMainBg</item>
+        <item name="drawerArrowStyle">@style/ToolbarColorStyle</item>
+        <item name="android:datePickerStyle">@style/MyDatePickerStyle</item>
+    </style>
+
+    <style name="MyAppTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_main_timviec</item>
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/color_main_timviec</item>
+        <item name="colorAccent">@color/colorMainAccent</item>
+        <item name="android:windowBackground">@color/colorMainBg</item>
+        <item name="drawerArrowStyle">@style/ToolbarColorStyle</item>
+
+    </style>
+
+    <style name="ToolbarColorStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">#fff</item>
+    </style>
+
+    <style name="MyDatePickerStyle" parent="@android:style/Widget.Material.Light.DatePicker" tools:targetApi="lollipop">
+        <item name="android:headerBackground">@color/color_main</item>
+        <item name="android:calendarTextColor">@color/colorTextWhite</item>
+        <item name="android:dayOfWeekBackground">@color/color_main</item>
+        <item name="android:yearListSelectorColor">@color/color_main</item>
+        <item name="android:datePickerMode">calendar</item>
+    </style>
+
+    <!-- todo: Crop image -->
+    <style name="CropButton">
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/selector_crop_button</item>
+        <!-- todo: end Crop image -->
+    </style>
+    <!-- todo :end 3/7/17 custom stype -->
+</resources>

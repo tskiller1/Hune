@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_taolaimatkhau"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txtSlogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLogo"
+        android:layout_centerHorizontal="true"
+        android:text="@string/slogan"
+        android:textColor="@color/colorTextWhite"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:id="@+id/layoutLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSlogan"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/taolaimatkhau_title"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/edtNewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/custom_edittext_login"
+            android:hint="@string/taolaimatkhau_matkhaumoi"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtReNewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext_login"
+            android:hint="@string/taolaimatkhau_nhaplaimatkhau"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnComplete"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_button_login"
+            android:text="@string/taolaimatkhau_hoantat"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

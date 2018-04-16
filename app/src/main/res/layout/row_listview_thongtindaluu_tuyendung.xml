@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/row_listview_thongtindaluu_tuyendung"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="15dp">
+
+        <RelativeLayout
+            android:id="@+id/ln_nghenghiep"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgNgheNghiep"
+                    android:layout_width="@dimen/size_icon_normal"
+                    android:layout_height="@dimen/size_icon_normal"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_clear" />
+
+                <TextView
+                    android:id="@+id/txtNgheNghiep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgNgheNghiep"
+                    android:layout_gravity="center"
+                    android:textColor="@color/color_main"
+                    android:textSize="@dimen/text_size_13sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/ln_nghenghiep"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rela"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true">
+
+                    <TextView
+                        android:id="@+id/txtTenUngVien"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/imgXoa"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/text_size_18sp" />
+
+                    <ImageView
+                        android:id="@+id/imgXoa"
+                        android:layout_width="@dimen/size_icon_normal"
+                        android:layout_height="@dimen/size_icon_normal"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_remove" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtMoTa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/rtbDanhGia"
+                    android:layout_below="@+id/rela"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:gravity="start|top"
+                    android:maxLines="3"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:id="@+id/rtbDanhGia"
+                    style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10dp"
+                    app:mrb_progressBackgroundTint="@color/colorStar"
+                    app:mrb_progressTint="@color/colorStar"
+                    app:mrb_secondaryProgressTint="@color/colorStar" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

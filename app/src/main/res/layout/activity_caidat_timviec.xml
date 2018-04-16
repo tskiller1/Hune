@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ln_caidat_tv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/color_main_timviec"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="@dimen/size_icon_toolbar"
+                    android:layout_height="@dimen/size_icon_toolbar"
+                    android:layout_centerVertical="true"
+                    android:padding="12.5dp"
+                    android:src="@mipmap/ic_back_white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/caidat_td_title"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="@dimen/size_text_toolbar" />
+
+                <ImageView
+                    android:id="@+id/imgNotify"
+                    android:layout_width="@dimen/size_icon_toolbar"
+                    android:layout_height="@dimen/size_icon_toolbar"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="12.5dp"
+                    android:src="@mipmap/ic_notification_white" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtThongTin"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:gravity="center_vertical"
+                        android:text="@string/caidat_td_thongtin"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/text_size_15sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorViewSpace" />
+
+                    <TextView
+                        android:id="@+id/txtDanhGiaUngDung"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/caidat_td_danhgiaungdung"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/text_size_15sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorViewSpace" />
+
+                    <TextView
+                        android:id="@+id/txtChiaSeUngDung"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/caidat_td_chiaseungdung"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/text_size_15sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorViewSpace" />
+
+                    <TextView
+                        android:id="@+id/txtNgonNgu"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:gravity="center_vertical"
+                        android:text="@string/caidat_td_ngonngu"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/text_size_15sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorViewSpace" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:id="@+id/txtNhanThongBao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/caidat_td_nhanthongbaopr"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorText"
+                            android:textSize="@dimen/text_size_15sp" />
+
+                        <com.kyleduo.switchbutton.SwitchButton
+                            android:id="@+id/swtThongBao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:checked="true"
+                            android:gravity="center"
+                            app:kswTintColor="@color/color_main_timviec" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorViewSpace"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txtHuongDan"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/caidat_td_huongdan"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/text_size_15sp"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorViewSpace" />
+
+                    <TextView
+                        android:id="@+id/txtDangXuat"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/caidat_td_dangxuat"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/text_size_15sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorViewSpace" />
+                </LinearLayout>
+            </ScrollView>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btnAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_add"
+                    app:backgroundTint="@color/color_main_timviec" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

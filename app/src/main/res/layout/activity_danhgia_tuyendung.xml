@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ln_danhgiatuyendung"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/color_main"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="@dimen/size_icon_toolbar"
+                    android:layout_height="@dimen/size_icon_toolbar"
+                    android:layout_centerVertical="true"
+                    android:padding="12.5dp"
+                    android:src="@mipmap/ic_back_white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/danhgia_td_title"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="@dimen/size_text_toolbar" />
+
+                <ImageView
+                    android:id="@+id/imgNotify"
+                    android:layout_width="@dimen/size_icon_toolbar"
+                    android:layout_height="@dimen/size_icon_toolbar"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="12.5dp"
+                    android:src="@mipmap/ic_notification_white" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/avatar" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imgAvatar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTenNguoiDung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_size_18sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_icon_small"
+                        android:layout_height="@dimen/size_icon_small"
+                        android:src="@mipmap/ic_heart_fill" />
+
+                    <TextView
+                        android:id="@+id/txtSoLuotTheoDoi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorRed"
+                        android:textSize="@dimen/text_size_13sp" />
+                </LinearLayout>
+
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:id="@+id/rtbTong"
+                    style="?attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:mrb_progressBackgroundTint="@color/colorStar"
+                    app:mrb_progressTint="@color/colorStar"
+                    app:mrb_secondaryProgressTint="@color/colorStar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgTheoDoi"
+                    android:layout_width="@dimen/size_icon_normal"
+                    android:layout_height="@dimen/size_icon_normal"
+                    android:src="@mipmap/ic_heart_red" />
+
+                <ImageView
+                    android:id="@+id/imgChiaSe"
+                    android:layout_width="@dimen/size_icon_normal"
+                    android:layout_height="@dimen/size_icon_normal"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/ic_share"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorViewSpace" />
+
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/rtbDanhGia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            app:mrb_progressBackgroundTint="@color/colorStar"
+            app:mrb_progressTint="@color/colorStar"
+            app:mrb_secondaryProgressTint="@color/colorStar" />
+
+        <EditText
+            android:id="@+id/edtNhanXet"
+            android:layout_width="300dp"
+            android:layout_height="175dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext_danhgia_tuyendung"
+            android:gravity="left"
+            android:hint="@string/danhgia_td_nhanxet"
+            android:padding="20dp"
+            android:textSize="@dimen/text_size_15sp" />
+
+        <Button
+            android:id="@+id/btnHoanTat"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_button_danhgia_tuyendung"
+            android:text="@string/danhgia_td_hoantat"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/danhgia_td_report"
+            android:textColor="@color/color_main"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTextWhite"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+</RelativeLayout>

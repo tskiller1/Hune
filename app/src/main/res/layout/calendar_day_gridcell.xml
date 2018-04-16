@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llBtnParent"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:layout_margin="1dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/day_calendar"
+        android:gravity="center"
+        android:padding="1dp">
+
+        <CustomButton
+            android:id="@+id/calendar_day_gridcell"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="left"
+            android:paddingLeft="2dp"
+            android:text="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

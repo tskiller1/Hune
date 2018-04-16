@@ -1,0 +1,87 @@
+{
+  "project_info": {
+    "project_number": "341766883332",
+    "firebase_url": "https://hune-164404.firebaseio.com",
+    "project_id": "hune-164404",
+    "storage_bucket": "hune-164404.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341766883332:android:3acfee63c4211f8b",
+        "android_client_info": {
+          "package_name": "com.hunegroup.hune"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "341766883332-80mp8r69ltvt3nj1lo6ddlc9gvpqil95.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hunegroup.hune",
+            "certificate_hash": "3792e25ea6516feb6367319846baaa8197430bc2"
+          }
+        },
+        {
+          "client_id": "341766883332-hcjbapp9bopl44lobek070is1tbdv8cb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hunegroup.hune",
+            "certificate_hash": "1b5c605c76bb193b155eeb424de46302dc98e8bc"
+          }
+        },
+        {
+          "client_id": "341766883332-3e1f6s4iq8oegn5i4asqnol6kjhos8lc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hunegroup.hune",
+            "certificate_hash": "1874ab906d0c179b70d229bce11a93b3491782ce"
+          }
+        },
+        {
+          "client_id": "341766883332-jccd0q5hu52j0tq4oqrgjqqeq47g5ciq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hunegroup.hune",
+            "certificate_hash": "77d3d6979560bdc548db332e40eb8ab2c876455a"
+          }
+        },
+        {
+          "client_id": "341766883332-2ui5rqbni4c6b4j7jutupbbe6s3odncv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9y9L87T5hQDVN-KF37heVEfPaSnRCdmE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "341766883332-2ui5rqbni4c6b4j7jutupbbe6s3odncv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "341766883332-8dlpccvcppr3o53u4a4u6hists8gj9do.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hunegroup.hune",
+                "app_store_id": "1227361450"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
